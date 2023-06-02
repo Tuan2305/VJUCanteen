@@ -49,14 +49,14 @@
                {% comment %} // lớp ul  {% endcomment %}
                 <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Trang Chủ </a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">HomePage </a>
                   </li> 
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'cart' %}">Cart  </a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Sản Phẩm
+                      Categories
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Sữa</a></li>
@@ -67,7 +67,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link "href="#">Liên hệ </a>
+                    <a class="nav-link "href="#">Contact </a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -81,9 +81,9 @@
                     nguoidung1 
                   </a>
                   <ul class="dropdown-menu"> 
-                    <li><a class="dropdown-item" href="#">Trang cá nhân</a></li>
-                    <li><a class="dropdown-item" href="{% url 'cart' %}">Đơn hàng </a></li>
-                    <li><a class="dropdown-item" href="#">Thoát</a></li>
+                    <li><a class="dropdown-item" href="#">User Page</a></li>
+                    <li><a class="dropdown-item" href="{% url 'cart' %}">History </a></li>
+                    <li><a class="dropdown-item" href="#">Log Out</a></li>
                     
                   </ul>
                 </li>
@@ -91,10 +91,10 @@
                   <a class="nav-link" href="{% url 'cart' %}">Giỏ hàng </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Đăng nhập </a>
+                  <a class="nav-link" href="#">Log In</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Đăng kí  </a>
+                  <a class="nav-link" href="#">Sign Up  </a>
                 </li>
               <ul>
             </div>
@@ -120,5 +120,6 @@
             coppyright 2022
         </footer>
         <script src= "{%static 'app/js/cart.js' %}" > </script> 
+
     </body>
 </html>
